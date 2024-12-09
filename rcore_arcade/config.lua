@@ -112,18 +112,6 @@ Config.MyList = {
 -- game list for retro machine
 Config.RetroMachine = {
     {
-        name = "Pacman",
-        link = "http://xogos.robinko.eu/PACMAN/",
-    },
-    {
-        name = "Tetris",
-        link = "http://xogos.robinko.eu/TETRIS/",
-    },
-    {
-        name = "Ping Pong",
-        link = "http://xogos.robinko.eu/PONG/",
-    },
-    {
         name = "DOOM",
         link = string.format("nui://rcore_arcade/html/msdos.html?url=%s&params=%s", "https://www.retrogames.cz/dos/zip/Doom.zip", "./DOOM.EXE"),
     },
@@ -140,25 +128,17 @@ Config.RetroMachine = {
 -- game list for gaming machine
 Config.GamingMachine = {
     {
-        name = "Slide a Lama",
-        link = "http://lama.robinko.eu/fullscreen.html",
+        name = "DOOM",
+        link = string.format("nui://rcore_arcade/html/msdos.html?url=%s&params=%s", "https://www.retrogames.cz/dos/zip/Doom.zip", "./DOOM.EXE"),
     },
     {
-        name = "Uno",
-        link = "https://duowfriends.eu/",
+        name = "Duke Nukem 3D",
+        link = string.format("nui://rcore_arcade/html/msdos.html?url=%s&params=%s", "https://www.retrogames.cz/dos/zip/duke3d.zip", "./DUKE3D.EXE"),
     },
     {
-        name = "Ants",
-        link = "http://ants.robinko.eu/fullscreen.html",
+        name = "Wolfenstein 3D",
+        link = string.format("nui://rcore_arcade/html/msdos.html?url=%s&params=%s", "https://www.retrogames.cz/dos/zip/Wolfenstein3D.zip", "./WOLF3D.EXE"),
     },
-    {
-        name = "FlappyParrot",
-        link = "http://xogos.robinko.eu/FlappyParrot/",
-    },
-    {
-        name = "Zoopaloola",
-        link = "http://zoopaloola.robinko.eu/Embed/fullscreen.html"
-    }
 }
 
 -- game list for super computer
