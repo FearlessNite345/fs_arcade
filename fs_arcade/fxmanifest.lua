@@ -1,5 +1,6 @@
 fx_version 'adamant'
 games { 'gta5' }
+version '1.0.0'
 
 client_scripts {
 	"locale.lua",
@@ -71,3 +72,7 @@ files {
 ui_page "html/index.html"
 
 lua54 "yes"
+
+dependencies {
+	"FS-Lib"
+}

@@ -1,4 +1,4 @@
----------------------------------
+--[[ ---------------------------------
 -- Do not change anything here --
 ---------------------------------
 local markersV2 = {}
@@ -331,4 +331,4 @@ AddEventHandler('onResourceStop', function(res)
             v.destroy()
         end
     end
-end)
+end) ]]

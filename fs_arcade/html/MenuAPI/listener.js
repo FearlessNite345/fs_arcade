@@ -17,13 +17,13 @@ var AppInput = new Vue({
 	},
     methods: {
         Choose: function(){
-            $.post('https://rcore_arcade/inputmethod', JSON.stringify({
+            $.post('https://fs_arcade/inputmethod', JSON.stringify({
                 identifier: this.identifier,
                 message: this.message,
             }));
         },
         Close: function(){
-            $.post('https://rcore_arcade/close', JSON.stringify({
+            $.post('https://fs_arcade/close', JSON.stringify({
                 identifier: this.identifier,
             }));
         },
@@ -87,7 +87,7 @@ $(function(){
 
 	    if(App.visible && !AppInput.visible){
             if (item.type_menu === "enter"){
-                $.post('https://rcore_arcade/clickItem', JSON.stringify({
+                $.post('https://fs_arcade/clickItem', JSON.stringify({
                     index: App.menu[index].number,
                     identifier: App.identifier,
                 }));
@@ -104,7 +104,7 @@ $(function(){
                 }
                 setActiveMenuIndex(index, true)
 
-                $.post('https://rcore_arcade/selectNew', JSON.stringify({
+                $.post('https://fs_arcade/selectNew', JSON.stringify({
                     index: App.menu[index].number,
                     identifier: App.identifier,
                     newIndex: App.menu[index].number,
@@ -124,7 +124,7 @@ $(function(){
 
                 setActiveMenuIndex(index, true)
 
-                $.post('https://rcore_arcade/selectNew', JSON.stringify({
+                $.post('https://fs_arcade/selectNew', JSON.stringify({
                     index: App.menu[index].number,
                     identifier: App.identifier,
                     newIndex: App.menu[index].number,

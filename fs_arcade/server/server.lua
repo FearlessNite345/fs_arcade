@@ -1,0 +1,1 @@
+exports['FS-Lib']:VersionCheck('fs_arcade', 'fearlessnite345/fs_arcade')
